@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Home | IMD318 Personal Digital Space</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+
+<style>
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f4f7f5;
+}
+
+.hero {
+    background-color: #2A4B45;
+    color: white;
+}
+
+.card-icon {
+    font-size: 40px;
+}
+
+.search-box {
+    width: 220px;
+}
+
+.search-box:focus {
+    width: 260px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+
+<div class="w3-bar w3-white w3-card w3-padding">
+
+    <a href="index.html"
+       class="w3-bar-item w3-button w3-teal w3-round">
+       Home
+    </a>
+
+    <a href="biodata.html"
+       class="w3-bar-item w3-button">
+       Biodata
+    </a>
+
+    <a href="experience.html"
+       class="w3-bar-item w3-button">
+       Experience
+    </a>
+
+    <a href="education.html"
+       class="w3-bar-item w3-button">
+       Education
+    </a>
+
+    <a href="family.html"
+       class="w3-bar-item w3-button">
+       Family
+    </a>
+
+    <a href="gallery.html"
+       class="w3-bar-item w3-button">
+       Gallery
+    </a>
+
+    <div class="w3-right">
+        <input
+            class="w3-input w3-border w3-round search-box"
+            type="text"
+            id="repo-search"
+            placeholder="Search portfolio logs..."
+            onkeyup="filterPortfolio()">
+    </div>
+
+</div>
+
+<!-- Hero Section -->
+
+<header class="w3-container hero w3-center w3-padding-64">
+
+    <h1><b>My Personal Space</b></h1>
+
+    <p class="w3-large">
+        Archiving the academic progression, individual landmarks,
+        and creative environmental insights of an aspiring
+        Information Management professional.
+    </p>
+
+    <a href="biodata.html"
+       class="w3-button w3-white w3-round-large">
+       Explore Profile Matrix
+    </a>
+
+</header>
+
+<!-- Content -->
+
+<div class="w3-content w3-padding-64" style="max-width:1150px">
+
+    <div class="w3-center w3-padding-32">
+
+        <h2><b>Curated Portfolio Modules</b></h2>
+
+        <p>
+            Select an operational gateway to review comprehensive
+            structures and environmental archives.
+        </p>
+
+    </div>
+
+    <div class="w3-row-padding">
+
+        <!-- Biodata -->
+
+        <div class="w3-third w3-margin-bottom portfolio-item">
+
+            <div class="w3-card w3-white w3-padding">
+
+                <div class="card-icon">👤</div>
+
+                <h4>Personal Biodata</h4>
+
+                <p>
+                    Identity structural profiles, core demographic
+                    metrics, and custom image-mapped personal hobby
+                    summaries.
+                </p>
+
+                <a href="biodata.html"
+                   class="w3-button w3-teal w3-round">
+                   View
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Experience -->
+
+        <div class="w3-third w3-margin-bottom portfolio-item">
+
+            <div class="w3-card w3-white w3-padding">
+
+                <div class="card-icon">💼</div>
+
+                <h4>Professional Timeline</h4>
+
+                <p>
+                    A structured log detailing practical technical
+                    assignments, hands-on tasks, and interactive
+                    environmental field records.
+                </p>
+
+                <a href="experience.html"
+                   class="w3-button w3-teal w3-round">
+                   View
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- Education -->
+
+        <div class="w3-third w3-margin-bottom portfolio-item">
+
+            <div class="w3-card w3-white w3-padding">
+
+                <div class="card-icon">🎓</div>
+
+                <h4>Academic Background</h4>
+
+                <p>
+                    Institutional history logs displaying completed
+                    credentials mapped seamlessly with data and web
+                    competencies.
+                </p>
+
+                <a href="education.html"
+                   class="w3-button w3-teal w3-round">
+                   View
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- External Links -->
+
+    <div class="w3-panel w3-border-top w3-padding-32">
+
+        <h3><b>External Connections</b></h3>
+
+        <p>
+            Direct pipelines to operational system infrastructure,
+            markup repositories and technical stylesheet libraries.
+        </p>
+
+        <a href="https://github.com/"
+           target="_blank"
+           class="w3-button w3-light-grey w3-round">
+           GitHub Repository
+        </a>
+
+        <a href="https://www.w3schools.com/w3css/"
+           target="_blank"
+           class="w3-button w3-teal w3-round">
+           W3.CSS Framework
+        </a>
+
+    </div>
+
+</div>
+
+<!-- GIF -->
+ 
+<div class="w3-center w3-padding-32">
+
+    <img src="image/levi.gif"
+         alt="Animation"
+         style="max-width:150px">
+
+</div>
+
+<!-- Footer -->
+
+<footer class="w3-container w3-center w3-padding-32 w3-dark-grey">
+
+    <p>
+        <b>Statement of Responsibility:</b>
+        This website is designed and maintained wholly by
+        Muhammad Firdaus bin Abd Aziz
+        (ID: 2024991167)
+        for fulfillment of the IMD318 coursework requirement.
+    </p>
+
+    <p class="w3-small">
+        Created: June 1, 2026 |
+        Last Updated: June 15, 2026
+    </p>
+
+</footer>
+
+<script>
+function filterPortfolio() {
+
+    var input =
+        document.getElementById("repo-search");
+
+    var filter =
+        input.value.toUpperCase();
+
+    var cards =
+        document.getElementsByClassName("portfolio-item");
+
+    for (var i = 0; i < cards.length; i++) {
+
+        if (
+            cards[i].innerText
+            .toUpperCase()
+            .indexOf(filter) > -1
+        ) {
+            cards[i].style.display = "";
+        } else {
+            cards[i].style.display = "none";
+        }
+    }
+}
+</script>
+
+</body>
+</html>

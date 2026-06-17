@@ -1,0 +1,29 @@
+body {
+    font-family: 'Poppins', sans-serif !important;
+    background-color: #F0F4F1 !important; 
+    color: #1E2A27; 
+}
+
+.header-bg {
+    background: linear-gradient(135deg, #2A4B45 0%, #152623 100%); 
+}
+
+.custom-marker-list li::before {
+    content: "✦";
+    position: absolute;
+    left: 8px;
+    color: #2A4B45; 
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+.aesthetic-table th {
+    background-color: #2A4B45 !important; 
+    color: #ffffff !important;
+    padding: 16px;
+    font-weight: 600;
+}
+
+.border-top-teal {
+    border-top: 4px solid #2A4B45 !important;
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gallery | IMD318 Personal Space</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        body { 
+            font-family: 'Poppins', sans-serif !important; 
+            background-color: #f4f7f5 !important; 
+            color: #2b3a36;
+            margin: 0; 
+        }
+        .font-weight-600 { font-weight: 600 !important; }
+        .nav-aesthetic { 
+            border-bottom: 1px solid rgba(42, 75, 69, 0.08);
+            background: rgba(255, 255, 255, 0.85) !important;
+            backdrop-filter: blur(12px);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="w3-bar w3-white w3-card w3-padding nav-aesthetic" style="display: flex; align-items: center; justify-content: center; width: 100%;">
+        <div class="w3-content" style="max-width:1150px; width: 100%; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px;">
+            <div style="display: flex; gap: 4px; flex-wrap: wrap; align-items: center;">
+                <a href="index.html" class="w3-bar-item w3-button w3-round-large">Home</a>
+                <a href="biodata.html" class="w3-bar-item w3-button w3-round-large">Biodata</a>
+                <a href="experience.html" class="w3-bar-item w3-button w3-round-large">Experience</a>
+                <a href="education.html" class="w3-bar-item w3-button w3-round-large">Education</a>
+                <a href="family.html" class="w3-bar-item w3-button w3-round-large">Family</a>
+                <a href="gallery.html" class="w3-bar-item w3-button w3-round-large w3-teal font-weight-600" style="background-color: #2A4B45 !important;">Gallery</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="w3-container w3-content w3-padding-64" style="max-width: 1200px; margin-top: 20px;">
+        <div class="w3-row-padding" style="margin: 0 -16px; display: flex; flex-wrap: wrap; justify-content: center;">
+            
+            <div class="w3-col m4 w3-margin-bottom" style="display: flex; flex-direction: column;">
+                <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0,0,0,0.03); border: 1px solid rgba(42, 75, 69, 0.08); transition: transform 0.4s ease, box-shadow 0.4s ease; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(42, 75, 69, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 25px rgba(0,0,0,0.03)';">
+                    <div style="width: 100%; height: 230px; overflow: hidden; position: relative;">
+                        <img src="image/takah.JPG" alt="Takah Pengkoi Sociological Log. Preserving dynamic family social structures and interactive social bonding at a localized Segamat river ecosystem." onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.06)';" onmouseout="this.style.transform='scale(1)';">
+                        <div style="position: absolute; border-top: 4px solid #2A4B45; bottom: 0; width: 100%;"></div>
+                    </div>
+                    <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+                        <p style="font-size: 13.5px; line-height: 1.6; color: #333d3a; margin: 0 0 14px 0; font-weight: 400;">
+                            <b>Takah Pengkoi Sociological Log.</b> Preserving dynamic family social structures and interactive bonding records at a localized Segamat river ecosystem.
+                        </p>
+                        <span style="font-size: 11px; color: #2A4B45; background: #eef5f2; padding: 5px 12px; border-radius: 8px; margin-bottom: 15px; display: inline-block; font-weight: 500; letter-spacing: 0.3px;">🔍 Thumbnail Active: Click image to enlarge view</span>
+                        <div style="border-top: 1px dashed rgba(42, 75, 69, 0.15); padding-top: 14px;">
+                            <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #2A4B45; font-weight: 600;">
+                                Family Picnic: Segamat Hydrology and Social Data
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom" style="display: flex; flex-direction: column;">
+                <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0,0,0,0.03); border: 1px solid rgba(42, 75, 69, 0.08); transition: transform 0.4s ease, box-shadow 0.4s ease; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(42, 75, 69, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 25px rgba(0,0,0,0.03)';">
+                    <div style="width: 100%; height: 230px; overflow: hidden; position: relative;">
+                        <img src="image/cbl.JPG" alt="CBL Endurance Mapping. A high-resilience 3D/2N mountaineering trail telemetry log, archiving wilderness survival navigation and ecosystem metadata." onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.06)';" onmouseout="this.style.transform='scale(1)';">
+                        <div style="position: absolute; border-top: 4px solid #2A4B45; bottom: 0; width: 100%;"></div>
+                    </div>
+                    <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+                        <p style="font-size: 13.5px; line-height: 1.6; color: #333d3a; margin: 0 0 14px 0; font-weight: 400;">
+                            <b>CBL Endurance Mapping.</b> A high-resilience 3D/2N mountaineering trail telemetry log, archiving wilderness survival navigation and ecosystem data.
+                        </p>
+                        <span style="font-size: 11px; color: #2A4B45; background: #eef5f2; padding: 5px 12px; border-radius: 8px; margin-bottom: 15px; display: inline-block; font-weight: 500; letter-spacing: 0.3px;">🔍 Thumbnail Active: Click image to enlarge view</span>
+                        <div style="border-top: 1px dashed rgba(42, 75, 69, 0.15); padding-top: 14px;">
+                            <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #2A4B45; font-weight: 600;">
+                                Multi-Day CBL Expedition: Wilderness Data and Team Logs
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="w3-col m4 w3-margin-bottom" style="display: flex; flex-direction: column;">
+                <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0,0,0,0.03); border: 1px solid rgba(42, 75, 69, 0.08); transition: transform 0.4s ease, box-shadow 0.4s ease; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(42, 75, 69, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 25px rgba(0,0,0,0.03)';">
+                    <div style="width: 100%; height: 230px; overflow: hidden; position: relative;">
+                        <img src="image/kontan.JPG" alt="Sungai Pandan Cascade patterns. Capturing localized Kuantan hydrology, botanical geometries, and hydraulic flow datasets." onclick="openLightbox(this)" style="width: 100%; height: 100%; object-fit: cover; display: block; cursor: zoom-in; transition: transform 0.5s ease;" onmouseover="this.style.transform='scale(1.06)';" onmouseout="this.style.transform='scale(1)';">
+                        <div style="position: absolute; border-top: 4px solid #2A4B45; bottom: 0; width: 100%;"></div>
+                    </div>
+                    <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+                        <p style="font-size: 13.5px; line-height: 1.6; color: #333d3a; margin: 0 0 14px 0; font-weight: 400;">
+                            <b>Sungai Pandan Cascade Patterns.</b> Capturing localized Kuantan hydrology records, complex botanical geometries, and hydraulic flow datasets.
+                        </p>
+                        <span style="font-size: 11px; color: #2A4B45; background: #eef5f2; padding: 5px 12px; border-radius: 8px; margin-bottom: 15px; display: inline-block; font-weight: 500; letter-spacing: 0.3px;">🔍 Thumbnail Active: Click image to enlarge view</span>
+                        <div style="border-top: 1px dashed rgba(42, 75, 69, 0.15); padding-top: 14px;">
+                            <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 0.5px; color: #2A4B45; font-weight: 600;">
+                                Kuantan Waterfall Series: Aquatic Structures and Plant Archiving
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+<div class="w3-col m4 w3-margin-bottom" style="display: flex; flex-direction: column; float: none; margin: 20px auto;">
+    <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0,0,0,0.03); border: 1px solid rgba(42, 75, 69, 0.08); transition: transform 0.4s ease, box-shadow 0.4s ease; height: 100%; display: flex; flex-direction: column;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 15px 35px rgba(42, 75, 69, 0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 25px rgba(0,0,0,0.03)';">
+        <div style="width: 100%; height: 230px; overflow: hidden; position: relative;">
+            
+            <img src="image/hoka.jpg" usemap="#trail-gear-map" alt="Trail Run Gear" style="width: 100%; height: 100%; object-fit: fill; display: block;">
+            <div style="position: absolute; border-top: 4px solid #2A4B45; bottom: 0; width: 100%;"></div>
+            
+            <map name="trail-gear-map">
+    <area shape="circle" coords="136,180,35" href="https://www.coros.com" target="_blank" alt="Coros Watch" title="Go to Coros Official Website">
+    
+    <area shape="poly" coords="134,20,267,10,363,85,342,150,294,165,216,135,115,110" href="https://www.hoka.com" target="_blank" alt="Hoka Shoes" title="Go to Hoka Official Website">
+    <area shape="poly" coords="135,70,219,150,241,190,188,210,107,170,60,115,64,80" href="https://www.hoka.com" target="_blank" alt="Hoka Shoes" title="Go to Hoka Official Website">
+</map>
+
+        </div>
+        <div style="padding: 24px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; text-align: center;">
+            <p style="font-size: 13.5px; line-height: 1.6; color: #333d3a; margin: 0 0 14px 0; font-weight: 400;">
+                <b>Trail Run Telemetry Log.</b> Mapping physical running assets to official brand data repositories. Click on the orange shoes or the turquoise watch face.
+            </p>
+            </div>
+        </div>
+    </div>
+        <div class="w3-container w3-content w3-padding-48" style="max-width: 1200px; margin-top: 20px; position: relative; z-index: 10;">
+        <div style="background: #ffffff; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 25px rgba(0,0,0,0.03); border: 1px solid rgba(42, 75, 69, 0.08); padding: 32px;">
+            <div style="text-align: center; margin-bottom: 24px;">
+                <span style="font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #2A4B45; font-weight: 600;">Time-Based Streaming Asset</span>
+                <h4 style="font-family: 'Poppins', sans-serif; font-weight: 600; color: #1a302b; margin: 5px 0 0 0;">Rinjani Mount Expedition Audiovisual Log</h4>
+                <div style="width: 50px; height: 3px; background: #2A4B45; margin: 10px auto 0 auto; border-radius: 2px;"></div>
+            </div>
+            <div style="position: relative; max-width: 800px; margin: 0 auto; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); border: 1px solid #cedbd3;">
+                <video controls style="width: 100%; display: block; background-color: #000000;" poster="image/rin.DNG">
+                    <source src="vid/rinjani.MP4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div style="max-width: 800px; margin: 20px auto 0 auto; text-align: center; border-top: 1px dashed rgba(42, 75, 69, 0.15); padding-top: 15px;">
+                <p style="font-size: 12.5px; line-height: 1.6; color: #55625e; margin: 0;">
+                    <b>Asset Description:</b> Continuous frame capturing recording the wilderness topography, dense canopy transitions, and team movement data across the 3D/2N Rinjani Mount trail coordinates.
+                </p>
+                <div style="margin-top: 10px;">
+                    <span style="font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; background: #eef5f2; color: #2A4B45; padding: 4px 10px; border-radius: 20px;">Format: H.264 MP4</span>
+                    <span style="font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; background: #eef5f2; color: #2A4B45; padding: 4px 10px; border-radius: 20px; margin-left: 5px;">Frame Rate: 60fps Digital Feed</span>
+                </div>
+            </div>
+        </div>
+    </div>  
+
+    <footer class="w3-container w3-padding-32 w3-center w3-text-white" style="background-color: #152623;">
+        <p class="w3-margin-none"><b>Statement of Responsibility:</b> This website is designed and maintained wholly by Muhammad Firdaus bin Abd Aziz (ID: 2024991167) for fulfillment of the IMD318 coursework requirement.</p>
+        <p class="w3-small" style="opacity: 0.5; margin-top: 8px;">Created: June 1, 2026 | Last Updated: June 15, 2026</p>
+    </footer>
+    
+    <div id="lightbox" class="w3-modal" onclick="this.style.display='none'" style="cursor:zoom-out; background-color: rgba(15, 28, 26, 0.98); z-index: 2000;">
+        <span class="w3-button w3-xlarge w3-text-white w3-display-topright" style="padding:24px; background: transparent !important;">× Close View</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent" style="margin-top:4%;">
+            <img id="lightboxImg" class="w3-image w3-round-large" style="max-height:82vh; border: 2px solid rgba(255,255,255,0.2); box-shadow: 0 10px 50px rgba(0,0,0,0.6);">
+            <p id="lightboxCaption" style="font-family: 'Poppins', sans-serif; font-weight: 300; letter-spacing: 0.5px; font-size: 14px; margin-top: 15px;" class="w3-text-light-grey"></p>
+        </div>
+    </div>
+
+    <script>
+        function openLightbox(element) {
+            document.getElementById("lightboxImg").src = element.src;
+            document.getElementById("lightboxCaption").innerHTML = element.alt;
+            document.getElementById("lightbox").style.display = "block";
+        }
+    </script>
+</body>
+</html>
